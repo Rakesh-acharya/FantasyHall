@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0", // This specifies the version of the configuration file format.
+
+    "configurations": [
+        
+        {
+            "type": "node", // Specifies that this is a Node.js application configuration.
+            "request": "launch", // Specifies that you want to launch the program.
+            "name": "Launch Program", // The name of this configuration.
+
+            "skipFiles": [
+                "<node_internals>/**" // Skip debugging Node.js internal files.
+            ],
+
+            "program": "${workspaceFolder}\\app.js" // The entry point of your Node.js application.
+        }
+    ]
+}
